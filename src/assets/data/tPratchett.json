@@ -1,0 +1,773 @@
+{
+  "results": [
+      {
+          "amazon_url": "https://www.amazon.com/dp/0544212479",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780544212473",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1992,
+          "language": "english",
+          "max_age": 10,
+          "measurements": {
+              "english": {
+                  "lexile": 630,
+                  "mlf": 3.49287995517617,
+                  "msl": 9.23202479338843
+              }
+          },
+          "min_age": 8,
+          "page_count": 289,
+          "published_works": [
+              {
+                  "binding": "HC",
+                  "copyright": 1992,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780544212473.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780544212473",
+                  "page_count": 289
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2013,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780544284715.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780544284715",
+                  "page_count": 256
+              }
+          ],
+          "series_name": null,
+          "subcategories": [
+              "Fantasy - General",
+              "Early Reading"
+          ],
+          "subject_tags": [
+              "Early learning: size, shapes & patterns",
+              "General fiction (Children's / Teenage)",
+              "Fantasy & magical realism (Children's / Teenage)"
+          ],
+          "summary": "In the beginning, there was nothing but endless flatness. Then came the Carpet . . . That's the old story everyone knows and loves. But now the Carpet is home to many different tribes and peoples, and there's a new story in the making. The story of Fray, sweeping a trail of destruction across the Carpet. The story of power-hungry mouls--and of two brothers who set out on an adventure to end all adventures when their village is flattened. It's a story that will come to a terrible end--if someone doesn't do something about it. If everyone doesn't do something about it . . . First published in 1971, this hilarious and wise novel marked the debut of the phenomenal Sir Terry Pratchett. Years later, Sir Terry revised the work, and this special collectable edition includes the updated text, his original color and black-and-white illustrations, and an exclusive story--a forerunner to The Carpet People created by the seventeen-year-old nascent writer who would become one of the world's most beloved storytellers.",
+          "title": "The Carpet People",
+          "vocab_words": [
+              "stable",
+              "shade",
+              "underlay",
+              "odd",
+              "convenient",
+              "manlike",
+              "crown",
+              "mate",
+              "trace",
+              "grit"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/006054189X",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780060541897",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 2006,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 610,
+                  "mlf": 3.6305163773,
+                  "msl": 8.2827270747
+              }
+          },
+          "min_age": null,
+          "page_count": 213,
+          "published_works": [
+              {
+                  "binding": "BB",
+                  "copyright": 2006,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780060541897.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780060541897",
+                  "page_count": 213
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2006,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061376719.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061376719",
+                  "page_count": 224
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2006,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061975219.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061975219",
+                  "page_count": 224
+              }
+          ],
+          "series_name": "Johnny Maxwell Series",
+          "subcategories": [
+              "Ghosts",
+              "Humor",
+              "Monsters"
+          ],
+          "subject_tags": [
+              "Humorous stories (Children's / Teenage)",
+              "General fiction (Children's / Teenage)",
+              "Horror & ghost stories, chillers (Children's / Teenage)"
+          ],
+          "summary": "\"Post-life citizens  Breath challenged  Vertically disadvantaged  (buried, not short)\" Johnny Maxwell's new friends not appreciate the term \"ghosts,\" but they are, well, \"dead,\" The town council wants to sell the cemetery, and its inhabitants aren't about to take that lying down! Johnny is the only one who can see them, and and the previously alive need his help to save their home and their history. Johnny didn't mean to become the voice for the lifeless, but if he doesn't speak up, who will?  In Johnny Maxwell's second adventure, Carnegie Medalist Terry Pratchett explores the bonds between the living and the dead and proves that it's never too late to have the time of your life -- even if it is your afterlife!",
+          "title": "Johnny and the Dead",
+          "vocab_words": [
+              "odd",
+              "generous",
+              "informative",
+              "draft",
+              "organ",
+              "serve",
+              "volume",
+              "minor",
+              "trace",
+              "bolt"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061020672",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061020674",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1988,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 820,
+                  "mlf": 3.27536,
+                  "msl": 11.47
+              }
+          },
+          "min_age": null,
+          "page_count": 288,
+          "published_works": [
+              {
+                  "binding": "MM",
+                  "copyright": 1988,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061020674.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061020674",
+                  "page_count": 288
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 1988,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061807145.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061807145",
+                  "page_count": 336
+              }
+          ],
+          "series_name": "Discworld",
+          "subcategories": [
+              "Fantasy - General",
+              "Humor"
+          ],
+          "subject_tags": [
+              "Fiction & related items",
+              "Fantasy",
+              "Humour"
+          ],
+          "summary": "When last seen, the singularly inept wizard Rincewind had fallen off the edge of the world. Now magically, he's turned up again, and this time he's brought the Luggage. But that's not all.... Once upon a time, there was an eighth son of an eighth son who was, of course, a wizard. As if that wasn't complicated enough, said wizard then had seven sons. And then he had an eighth son -- a wizard squared (that's all the math, really). Who of course, was a source of magic -- a sorcerer.",
+          "title": "Sourcery",
+          "vocab_words": [
+              "incontinence",
+              "conviviality",
+              "tendency",
+              "generous",
+              "raw",
+              "menagerie",
+              "minor",
+              "optional",
+              "hollow",
+              "resist"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061020664",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061020667",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1980,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 700,
+                  "mlf": 3.35409,
+                  "msl": 10.21
+              }
+          },
+          "min_age": null,
+          "page_count": 288,
+          "published_works": [
+              {
+                  "binding": "MM",
+                  "copyright": 1980,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061020667.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061020667",
+                  "page_count": 288
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 1980,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061807152.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061807152",
+                  "page_count": 368
+              }
+          ],
+          "series_name": "Discworld",
+          "subcategories": [
+              "Fantasy - General"
+          ],
+          "subject_tags": [
+              "Fantasy"
+          ],
+          "summary": "Terry's Pratchett's profoundly irreverent novels are consistent number one bestsellers in England, where they have catapulted him into the highest echelons of parody next to Mark Twain, Kurt Vonnegut, Douglas Adams, and Carl Hiaasen. Meet Granny Weatherwax, the most highly regarded non-leader a coven of non-social witches could ever have. Generally, these loners don't get involved in anything, mush less royal intrigue. but then there are those times they can't help it. As Granny Weatherwax is about to discover, though, it's a lot harder to stir up trouble in the castle than some theatrical types would have you think. Even when you've got a few unexpected spells up your sleeve.",
+          "title": "Wyrd Sisters",
+          "vocab_words": [
+              "incontinent",
+              "tense",
+              "odd",
+              "convention",
+              "stable",
+              "gag",
+              "commence",
+              "minor",
+              "bestride",
+              "precedent"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061020710",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061020711",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1983,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 890,
+                  "mlf": 3.21434,
+                  "msl": 12.18
+              }
+          },
+          "min_age": null,
+          "page_count": 240,
+          "published_works": [
+              {
+                  "binding": "MM",
+                  "copyright": 1983,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061020711.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061020711",
+                  "page_count": 240
+              },
+              {
+                  "binding": "PB",
+                  "copyright": 2014,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780060855925.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780060855925",
+                  "page_count": 240
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2014,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061796845.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061796845",
+                  "page_count": 240
+              },
+              {
+                  "binding": "TC",
+                  "copyright": 1983,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780861403240.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780861403240",
+                  "page_count": 206
+              }
+          ],
+          "series_name": "Discworld",
+          "subcategories": [
+              "Fantasy - General",
+              "Humor"
+          ],
+          "subject_tags": [
+              "Fiction & related items",
+              "Fantasy",
+              "Humour"
+          ],
+          "summary": "Terry Pratchett's profoundly irreverent novels are consistent number one bestsellers in England, where they have garnered him a revered position in the halls of parody next to Mark Twain, Kurt Vonnegut, Douglas Adams, and Carl Hiaasen. The Color of Magic is Terry Pratchett's maiden voyage through the now-legendary land of Discworld. This is where it all begins--with the tourist Twoflower and his wizard guide, Rincewind.",
+          "title": "The Color of Magic",
+          "vocab_words": [
+              "concession",
+              "intense",
+              "convenient",
+              "minor",
+              "raw",
+              "uncomely",
+              "resign",
+              "imp",
+              "pension",
+              "sentience"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061020680",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061020681",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1987,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 830,
+                  "mlf": 3.22958,
+                  "msl": 11.35
+              }
+          },
+          "min_age": null,
+          "page_count": 272,
+          "published_works": [
+              {
+                  "binding": "MM",
+                  "copyright": 1987,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061020681.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061020681",
+                  "page_count": 272
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 1987,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061803888.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061803888",
+                  "page_count": 304
+              }
+          ],
+          "series_name": "Discworld",
+          "subcategories": [
+              "Fantasy - General"
+          ],
+          "subject_tags": [
+              "Fantasy"
+          ],
+          "summary": "Terry Pratchett's profoundly irreverent novels are consistent number one bestseller in England, where they have catapulted him into the highest echelons of parody next to Mark Twain, Kurt Vonnegut, Douglas Adams, and Carl Hiaasen. In this Discworld installment, Death comes to Mort with an offer he can't refuse -- especially since being, well, dead isn't compulsory.As Death's apprentice, he'll have free board and lodging, use of the company horse, and he won't need time off for family funerals. The position is everything Mort thought he'd ever wanted, until he discovers that this perfect job can be a killer on his love life.",
+          "title": "Mort",
+          "vocab_words": [
+              "concede",
+              "tendency",
+              "conventional",
+              "generous",
+              "dispose",
+              "minor",
+              "precedence",
+              "dispense",
+              "raw",
+              "pardon"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061020702",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061020704",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1986,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 820,
+                  "mlf": 3.28477,
+                  "msl": 11.52
+              }
+          },
+          "min_age": null,
+          "page_count": 272,
+          "published_works": [
+              {
+                  "binding": "MM",
+                  "copyright": 1986,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061020704.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061020704",
+                  "page_count": 272
+              },
+              {
+                  "binding": "PB",
+                  "copyright": 2014,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780060855888.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780060855888",
+                  "page_count": 272
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2014,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061801150.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061801150",
+                  "page_count": 272
+              },
+              {
+                  "binding": "TC",
+                  "copyright": 1986,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780861402038.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780861402038",
+                  "page_count": 218
+              }
+          ],
+          "series_name": "Discworld",
+          "subcategories": [
+              "Fantasy - General"
+          ],
+          "subject_tags": [
+              "Fantasy"
+          ],
+          "summary": "Terry Pratchett's profoundly irreverent novels are consistent number one bestsellers in England, where they have garnered him a revered position in the halls of parody next to Mark Twain, Kurt Vonnegut, Douglas Adams, and Carl Hiaasen. In The Light Fantastic only one individual can save the world from a disastrous collision. Unfortunately, the hero happens to be the singularly inept wizard Rincewind, who was last seen falling off the edge of the world...",
+          "title": "The Light Fantastic",
+          "vocab_words": [
+              "concentric",
+              "intense",
+              "manual",
+              "generous",
+              "kink",
+              "convenient",
+              "reform",
+              "carouse",
+              "hollow",
+              "spiral"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061051586",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061051586",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1999,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 650,
+                  "mlf": 3.42042,
+                  "msl": 9.89
+              }
+          },
+          "min_age": null,
+          "page_count": 296,
+          "published_works": [
+              {
+                  "binding": "HC",
+                  "copyright": 1999,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061051586.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061051586",
+                  "page_count": 296
+              }
+          ],
+          "series_name": null,
+          "subcategories": [
+              "Fantasy - General"
+          ],
+          "subject_tags": [
+              "Fantasy"
+          ],
+          "summary": "It is rare and splendid event when an author is elevated from the underground into the international literary establishment. In the case of England's best-known and best-loved modern satirist, that event has been long overdue. Terry Pratchett's profoundly irreverent Discworld novels satirize and celebrate every aspect of life, modern and ancient, sacred and profane. Consistent number-one bestsellers in England, they have garnered him a secure position in the pantheon of humor along with Mark Twain, Douglas Adams, Matt Groening, and Jonathan Swift. Even so distinguished an author as A. S. Byatt has sung his praises, calling Pratchett's intricate and delightful fictional Discworld \"more complicated and satisfying than Oz.\" His latest satiric triumph, Carpe Jugulum, involves an exclusive royal snafu that leads to comic mayhem. In a fit of enlightenment democracy and ebullient goodwill, King Verence invites Uberwald's undead, the Magpyrs, into Lancre to celebrate the birth of his daughter. But once ensconced within the castle, these wine-drinking, garlic-eating, sun-loving modern vampires have no intention of leaving. Ever. Only an uneasy alliance between a nervous young priest and the argumentative local witches can save the country from being taken over by people with a cultivated bloodlust and bad taste in silk waistcoats. For them, there's only one way to fight. Go for the throat, or as the vampyres themselves say... Carpe Jugulum",
+          "title": "Carpe Jugulum",
+          "vocab_words": [
+              "concession",
+              "retentive",
+              "odd",
+              "organ",
+              "stable",
+              "convenient",
+              "refine",
+              "manual",
+              "crown",
+              "dip"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/006001234X",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780060012342",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Animals, Bugs & Pets"
+          ],
+          "copyright": 2002,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 550,
+                  "mlf": 3.52821,
+                  "msl": 9.16
+              }
+          },
+          "min_age": null,
+          "page_count": 256,
+          "published_works": [
+              {
+                  "binding": "LB",
+                  "copyright": 2002,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780060012342.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780060012342",
+                  "page_count": 256
+              },
+              {
+                  "binding": "PB",
+                  "copyright": 2002,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780060012359.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780060012359",
+                  "page_count": 368
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2002,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061975158.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061975158",
+                  "page_count": 256
+              },
+              {
+                  "binding": "HC",
+                  "copyright": 2008,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780613657570.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780613657570",
+                  "page_count": 368
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2002,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061376535.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061376535",
+                  "page_count": 368
+              },
+              {
+                  "binding": "TC",
+                  "copyright": 2002,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780756914585.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780756914585",
+                  "page_count": 340
+              }
+          ],
+          "series_name": null,
+          "subcategories": [
+              "Humor"
+          ],
+          "subject_tags": [
+              "Humorous stories (Children's / Teenage)",
+              "Animal stories (Children's / Teenage)",
+              "General fiction (Children's / Teenage)"
+          ],
+          "summary": "Carnegie Medal Winner * New York Public Library Books for the Teen Age * VOYA Best Science Fiction, Fantasy, and Horror * ALA Best Fiction for Young Adults * Book Sense Pick The Amazing Maurice runs the perfect Pied Piper scam. This streetwise alley cat knows the value of cold, hard cash and can talk his way into and out of anything. But when Maurice and his cohorts decide to con the town of Bad Blinitz, it will take more than fast talking to survive the danger that awaits. For this is a town where food is scarce and rats are hated, where cellars are lined with deadly traps, and where a terrifying evil lurks beneath the hunger-stricken streets.... Set in Terry Pratchett's beloved Discworld, this masterfully crafted, gripping read is both compelling and funny. When one of the world's most acclaimed fantasy writers turns a classic fairy tale on its head, no one will ever look at the Pied Piper--or rats--the same way again!",
+          "title": "The Amazing Maurice and His Educated Rodents",
+          "vocab_words": [
+              "form",
+              "contest",
+              "stable",
+              "press",
+              "snap",
+              "odd",
+              "flat",
+              "tension",
+              "generous",
+              "convenient"
+          ]
+      },
+      {
+          "amazon_url": "https://www.amazon.com/dp/0061020699",
+          "author_first_names": [
+              "Terry"
+          ],
+          "author_last_names": [
+              "Pratchett"
+          ],
+          "authors": [
+              "Terry Pratchett"
+          ],
+          "canonical_isbn": "9780061020698",
+          "categories": [
+              "Fiction, Non-fiction & Poetry",
+              "Science Fiction & Fantasy"
+          ],
+          "copyright": 1987,
+          "language": "english",
+          "max_age": null,
+          "measurements": {
+              "english": {
+                  "lexile": 880,
+                  "mlf": 3.23986,
+                  "msl": 12.18
+              }
+          },
+          "min_age": null,
+          "page_count": 240,
+          "published_works": [
+              {
+                  "binding": "MM",
+                  "copyright": 1987,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061020698.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061020698",
+                  "page_count": 240
+              },
+              {
+                  "binding": "PB",
+                  "copyright": 2014,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780060855901.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780060855901",
+                  "page_count": 240
+              },
+              {
+                  "binding": "EB",
+                  "copyright": 2014,
+                  "cover_art_url": "https://s3.amazonaws.com/mm-static-media/books/cover-art/9780061804830.jpeg",
+                  "english_language_learner": false,
+                  "isbn": "9780061804830",
+                  "page_count": 240
+              }
+          ],
+          "series_name": "Discworld",
+          "subcategories": [
+              "Fantasy - General"
+          ],
+          "subject_tags": [
+              "Fantasy"
+          ],
+          "summary": "A wizard predicts his own death and readies himself for the traditional transfer of power to the eighth son of an eighth son. The snag is that the eighth son is a daughter and women can't be wizards.",
+          "title": "Equal Rites",
+          "vocab_words": [
+              "conceal",
+              "minor",
+              "intense",
+              "convenient",
+              "grate",
+              "mute",
+              "raw",
+              "unmentionable",
+              "precedent",
+              "optional"
+          ]
+      }
+  ],
+  "total_pages": 6,
+  "total_results": 55
+}

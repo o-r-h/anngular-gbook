@@ -1,0 +1,31 @@
+:host {
+  display: block;
+}
+
+
+.row-one-section{
+  min-height: 10rem;
+  padding-top: 1rem;
+  ;
+  display: flex ;
+  justify-content: center;
+
+  border: 0px solid #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin: 1rem;
+  margin-bottom: 5rem;
+}
+
+.row-one-section img{
+  width: 100%;
+  height: 90%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+
+

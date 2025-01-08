@@ -1,0 +1,46 @@
+.row-adv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.col-adv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card{
+  border: 0px solid #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin: 1rem;
+  align-items: center;
+
+}
+
+.card img {
+  padding: 1rem;
+  max-width: 500px;
+  max-height: 593px;
+}
+
+.adv-text {
+  padding: 1rem;
+  text-align: center;
+  border: 0px solid #ffffff;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row-adv {
+    display: grid;
+    grid-template-rows: repeat(2,1fr) ;
+    justify-content: center;
+    padding: 1rem;
+  }
+}

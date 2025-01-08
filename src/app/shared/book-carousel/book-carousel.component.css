@@ -1,0 +1,117 @@
+
+
+
+.container-carousel {
+  padding-left: 4rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  grid-auto-flow: dense;
+  justify-items: center;
+}
+
+.row-show-books {
+  margin-top: 3rem;
+   padding-bottom: 2rem;
+   padding-left: 4rem;
+}
+
+.row-show-books h2{
+  font-family: 'Magician';
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.container-carousel .card {
+  width: 18rem; padding: 10px; border: none;
+}
+
+.container-carousel .card .card-body {
+  text-align: center;
+
+}
+
+.card .card-body .card-title {
+  margin: 0 0 0 0;
+  font-size: small;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+
+ /* Animación para la tarjeta */
+ .custom-card {
+  min-height: 300px ;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none; /* Remueve borde predeterminado */
+}
+
+.custom-card:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.custom-card img {
+  transition: transform 0.3s ease; /* Animación para la imagen */
+}
+
+.custom-card:hover img {
+  transform: scale(1.05); /* Agranda ligeramente la imagen */
+}
+
+.btn-quick-view{
+  margin-top: 1.5rem;
+    font-size: smaller;
+    background-color: snow;
+    font-family: lato;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1350 ;
+  height: 100%;
+  padding-left: 1.5rem;
+}
+
+.swiper-slide {
+  height: 390px;
+  width: 200px !important;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 150px;
+  max-height: 200px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-wrapper {
+    justify-content: center;
+}
+
+}
