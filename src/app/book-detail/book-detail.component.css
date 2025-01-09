@@ -1,8 +1,8 @@
  .carousel-discounts {
   height: 4rem;
+ }
 
-
-}.slide-in-carousel {
+.slide-in-carousel {
   background-color: var(--negro);
   color: var(--fondo-claro);
   text-align: center;
@@ -39,11 +39,117 @@
   flex-basis: 33.3%;
   background-color: var(--verde);
   border-color: var(--negro);
-  justify-content: center;
+  justify-content: left;
   display:flex;
   font-size: 4rem;
   border: 1rem solid var(--gris);
-  padding: 5rem;
-}
+  padding: 1rem;
 }
 
+.card .box-inside-info{
+  flex-basis: 33.3%;
+  background-color: var(--verde);
+  border-color: var(--negro);
+  justify-content: left;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 4rem;
+  border: 1rem solid var(--gris);
+  padding: 1rem;
+}
+
+.card .box-inside-info h1{
+  font-size: 4rem;
+}
+
+.sumary-text{
+  font-size: small;
+}
+
+
+
+.d-flex-box-7{
+  display: flex;
+
+    flex-wrap: wrap;
+    flex-direction:row;
+    background-color: var(--blanco);
+    justify-content: center;
+    padding: 5rem;
+    margin: 1rem;
+}
+
+
+.d-flex-box-7 .box-inside-1{
+  flex-grow: 1;
+justify-content: flex-start;
+  display:flex;
+
+}
+
+.d-flex-box-7 .box-inside-1:nth-child(1){
+  flex-grow: .5;
+}
+
+.d-flex-box-7 .box-inside-1:nth-child(2){
+  flex-grow: 6;
+}
+
+.box-inside-2{
+  display: flex;
+    flex-direction: column;
+
+}
+
+.description{
+  color: slategray;
+}
+
+.like{
+  padding-left: 1.5rem;
+}
+
+article{
+  height: 120px;
+  overflow: hidden;
+  transition: height .5s;
+  interpolate-size: allow-keywords;
+  max-width:550px;
+}
+
+article p{
+  font-size:1.5rem;
+  padding-left: .7rem;
+
+}
+
+article:hover{
+  height: auto;
+}
+
+.accordion{
+  padding-left: 5rem;
+  max-width: 130rem;
+}
+
+.accordion-button {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.accordion-body h2{
+ font-size: 1.6rem;
+}
+
+.impact{
+  padding-right: 2rem ;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+
+.impact-bold{
+  font-weight: bold;
+
+}
