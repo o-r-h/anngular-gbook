@@ -1,0 +1,487 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>anngular-gbook documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">anngular-gbook documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  BookDetailComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/book-detail/book-detail.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-book-detail</code></td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">imports</td>
+                <td class="col-md-9">
+                            <code>CarouselModule</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./book-detail.component.html</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrl</td>
+                <td class="col-md-9"><code>./book-detail.component.css</code></td>
+            </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#lines" >lines</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lines"></a>
+                    <span class="name">
+                        <span ><b>lines</b></span>
+                        <a href="#lines"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;Free shipping on orders over $50&#x27;, &#x27;Free returns&#x27;, &#x27;Free in-store pickup&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/book-detail/book-detail.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectionStrategy, Component } from &#x27;@angular/core&#x27;;
+import { CarouselModule } from &#x27;ngx-bootstrap/carousel&#x27;;
+@Component({
+  selector: &#x27;app-book-detail&#x27;,
+  imports: [CarouselModule],
+  templateUrl: &#x27;./book-detail.component.html&#x27;,
+  styleUrl: &#x27;./book-detail.component.css&#x27;,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class BookDetailComponent {
+
+  lines&#x3D; [&#x27;Free shipping on orders over $50&#x27;, &#x27;Free returns&#x27;, &#x27;Free in-store pickup&#x27;];
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;carousel class&#x3D;&quot;carousel  discounts&quot;&gt;
+  &lt;slide class&#x3D;&quot;slide-in-carousel&quot;&gt;
+    &lt;h2&gt;Free shipping on orders over $50&lt;/h2&gt;
+  &lt;/slide&gt;
+  &lt;slide class&#x3D;&quot;slide-in-carousel&quot;&gt;
+    &lt;h2&gt;Free returns&lt;/h2&gt;
+  &lt;/slide&gt;
+  &lt;slide class&#x3D;&quot;slide-in-carousel&quot;&gt;
+    &lt;h2&gt;Free in-store pickup&lt;/h2&gt;
+  &lt;/slide&gt;
+&lt;/carousel&gt;
+&lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;div class&#x3D;&quot;d-flex-box-7&quot;&gt;
+            &lt;div class&#x3D;&quot;box-inside-1&quot;&gt;
+                 &lt;div class&#x3D;&quot;box-inside-2&quot;&gt;
+                   &lt;div&gt;  &lt;img src&#x3D;&quot;https://m.media-amazon.com/images/I/81zeKRGCPpL.jpg&quot; alt&#x3D;&quot;image&quot; width&#x3D;&quot;320px&quot; height&#x3D;&quot;370px&quot;&gt;&lt;/div&gt;
+                   &lt;div&gt;
+                     &lt;h1&gt;Autor:  &lt;span class&#x3D;&quot;description&quot;&gt;JR Rowling&lt;/span&gt;&lt;/h1&gt;
+
+                     &lt;h2&gt;Whislist:
+                      &lt;span class&#x3D;&quot;like&quot;&gt;
+                        &lt;svg
+                          xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;
+                          width&#x3D;&quot;16&quot;
+                          height&#x3D;&quot;16&quot;
+                          fill&#x3D;&quot;currentColor&quot;
+                          class&#x3D;&quot;bi bi-heart&quot;
+                          viewBox&#x3D;&quot;0 0 16 16&quot;
+                          &gt;
+                          &lt;path d&#x3D;&quot;m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15&quot;/&gt;
+                        &lt;/svg&gt;
+                        &lt;/span&gt;
+                     &lt;/h2&gt;
+
+                   &lt;/div&gt;
+                 &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;box-inside-1&quot;&gt;
+              &lt;div class&#x3D;&quot;box-inside-3&quot;&gt;
+               &lt;h1&gt;Harry Potter and the Goblet of Fire&lt;/h1&gt;
+               &lt;article class&#x3D;&quot;summary&quot; &gt;
+                &lt;p&gt;
+                  Summary: The summer after his first year at Hogwarts is worse than ever for Harry Potter. The Dursleys of Privet Drive are more horrible to him than ever before. And just when he thinks the endless summer vacation is over, a creature named Dobby the house-elf shows up issuing a grave warning to Harry not to go back to school or disaster will happen! Of course, Harry has to go back- and he does so in grand style, in a flying-car magicked by his friends Ron and Percy Weasley. But getting back to Hogwarts isn&#x27;t the cure Harry expects it to be. Almost immediately a student is found turned to stone, and then another. And somehow Harry stands accused. Could Harry Potter be the long-feared heir of Slytherin?Harry and friends Hermione and Fred are stretched to their limits in a desperate fight against Draco Malfoy and his gang, the hideously stuck-up new professor Gilderoy Lockheart, the malevolent owner of the diary of Tom Riddle, giant spiders, and perhaps even...Hagrid!This is the book that proves J.K. Rowling is a talent that&#x27;s here to stay!
+                &lt;/p&gt;
+               &lt;/article&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;accordion accordion-flush&quot; id&#x3D;&quot;accordionFlushExample&quot;&gt;
+          &lt;div class&#x3D;&quot;accordion-item&quot;&gt;
+            &lt;h2 class&#x3D;&quot;accordion-header&quot; id&#x3D;&quot;flush-headingOne&quot;&gt;
+              &lt;button class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot; data-bs-target&#x3D;&quot;#flush-collapseOne&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;flush-collapseOne&quot;&gt;
+                Book Details
+              &lt;/button&gt;
+            &lt;/h2&gt;
+            &lt;div id&#x3D;&quot;flush-collapseOne&quot; class&#x3D;&quot;accordion-collapse collapse&quot; aria-labelledby&#x3D;&quot;flush-headingOne&quot; data-bs-parent&#x3D;&quot;#accordionFlushExample&quot;&gt;
+              &lt;div class&#x3D;&quot;accordion-body&quot;&gt;
+                &lt;h2&gt;Copyright: &lt;span class&#x3D;&quot;description&quot;&gt;2000&lt;/span&gt;&lt;/h2&gt;
+                &lt;h2&gt;ISBN: &lt;span class&#x3D;&quot;description&quot;&gt;9780008404994&lt;/span&gt;&lt;/h2&gt;
+                &lt;h2&gt;Languaje: &lt;span class&#x3D;&quot;description&quot;&gt;English&lt;/span&gt;&lt;/h2&gt;
+                &lt;h2&gt;Pages: &lt;span class&#x3D;&quot;description&quot;&gt;785&lt;/span&gt;&lt;/h2&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;accordion-item&quot;&gt;
+            &lt;h2 class&#x3D;&quot;accordion-header&quot; id&#x3D;&quot;flush-headingTwo&quot;&gt;
+              &lt;button class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot; data-bs-target&#x3D;&quot;#flush-collapseTwo&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;flush-collapseTwo&quot;&gt;
+                Reviews
+              &lt;/button&gt;
+            &lt;/h2&gt;
+            &lt;div id&#x3D;&quot;flush-collapseTwo&quot; class&#x3D;&quot;accordion-collapse collapse&quot; aria-labelledby&#x3D;&quot;flush-headingTwo&quot; data-bs-parent&#x3D;&quot;#accordionFlushExample&quot;&gt;
+              &lt;div class&#x3D;&quot;accordion-body&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                  &lt;h2 class&#x3D;&quot;impact&quot;&gt;&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ea beatae ipsum corrupti, impedit esse similique non, natus distinctio a obcaecati repellat? Odit, minus iure ipsam labore facilis quasi nesciunt.&quot;&lt;/h2&gt;
+                  &lt;h2 class&#x3D;&quot;impact-bold&quot;&gt;If anyone asks where I am, I&#x27;ve left the country. Oh... candy, leftovers, Eggo&#x27;s... she really likes Eggo&#x27;s. Why are you keeping this curiosity door lock?&lt;/h2&gt;
+                  &lt;h2 class&#x3D;&quot;impact&quot;&gt;&quot;Subway tile lomo forage blog hammock, blackbird spyplane pok pok shabby chic vibecession vaporware cupping. Aesthetic butcher sustainable gentrify vinyl literally. Wayfarers hoodie pour-over scenester.&quot;&lt;/h2&gt;
+                  &lt;h2 class&#x3D;&quot;impact-bold&quot;&gt;&quot;Echo park pickled biodiesel keffiyeh plaid wolf same chicharrones pok pok pork belly snackwave palo santo. Whatever grailed bitters skateboard sriracha bruh sus sartorial.&quot;&lt;/h2&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><carousel class="carousel  discounts">  <slide class="slide-in-carousel">    <h2>Free shipping on orders over $50</h2>  </slide>  <slide class="slide-in-carousel">    <h2>Free returns</h2>  </slide>  <slide class="slide-in-carousel">    <h2>Free in-store pickup</h2>  </slide></carousel><div class="container">        <div class="d-flex-box-7">            <div class="box-inside-1">                 <div class="box-inside-2">                   <div>  <img src="https://m.media-amazon.com/images/I/81zeKRGCPpL.jpg" alt="image" width="320px" height="370px"></div>                   <div>                     <h1>Autor:  <span class="description">JR Rowling</span></h1>                     <h2>Whislist:                      <span class="like">                        <svg                          xmlns="http://www.w3.org/2000/svg"                          width="16"                          height="16"                          fill="currentColor"                          class="bi bi-heart"                          viewBox="0 0 16 16"                          >                          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>                        </svg>                        </span>                     </h2>                   </div>                 </div>            </div>            <div class="box-inside-1">              <div class="box-inside-3">               <h1>Harry Potter and the Goblet of Fire</h1>               <article class="summary" >                <p>                  Summary: The summer after his first year at Hogwarts is worse than ever for Harry Potter. The Dursleys of Privet Drive are more horrible to him than ever before. And just when he thinks the endless summer vacation is over, a creature named Dobby the house-elf shows up issuing a grave warning to Harry not to go back to school or disaster will happen! Of course, Harry has to go back- and he does so in grand style, in a flying-car magicked by his friends Ron and Percy Weasley. But getting back to Hogwarts isn\'t the cure Harry expects it to be. Almost immediately a student is found turned to stone, and then another. And somehow Harry stands accused. Could Harry Potter be the long-feared heir of Slytherin?Harry and friends Hermione and Fred are stretched to their limits in a desperate fight against Draco Malfoy and his gang, the hideously stuck-up new professor Gilderoy Lockheart, the malevolent owner of the diary of Tom Riddle, giant spiders, and perhaps even...Hagrid!This is the book that proves J.K. Rowling is a talent that\'s here to stay!                </p>               </article>              </div>            </div>        </div>        <div class="accordion accordion-flush" id="accordionFlushExample">          <div class="accordion-item">            <h2 class="accordion-header" id="flush-headingOne">              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">                Book Details              </button>            </h2>            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">              <div class="accordion-body">                <h2>Copyright: <span class="description">2000</span></h2>                <h2>ISBN: <span class="description">9780008404994</span></h2>                <h2>Languaje: <span class="description">English</span></h2>                <h2>Pages: <span class="description">785</span></h2>                </div>            </div>          </div>          <div class="accordion-item">            <h2 class="accordion-header" id="flush-headingTwo">              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">                Reviews              </button>            </h2>            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">              <div class="accordion-body">                <div class="row">                  <h2 class="impact">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ea beatae ipsum corrupti, impedit esse similique non, natus distinctio a obcaecati repellat? Odit, minus iure ipsam labore facilis quasi nesciunt."</h2>                  <h2 class="impact-bold">If anyone asks where I am, I\'ve left the country. Oh... candy, leftovers, Eggo\'s... she really likes Eggo\'s. Why are you keeping this curiosity door lock?</h2>                  <h2 class="impact">"Subway tile lomo forage blog hammock, blackbird spyplane pok pok shabby chic vibecession vaporware cupping. Aesthetic butcher sustainable gentrify vinyl literally. Wayfarers hoodie pour-over scenester."</h2>                  <h2 class="impact-bold">"Echo park pickled biodiesel keffiyeh plaid wolf same chicharrones pok pok pork belly snackwave palo santo. Whatever grailed bitters skateboard sriracha bruh sus sartorial."</h2>                </div>              </div>            </div>          </div>        </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BookCarouselComponent', 'selector': 'app-book-carousel'},{'name': 'BookDetailComponent', 'selector': 'app-book-detail'},{'name': 'HeaderAppComponent', 'selector': 'app-header-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'OneAdvSectionComponent', 'selector': 'app-one-adv-section'},{'name': 'SearchBarComponent', 'selector': 'app-search-bar'},{'name': 'TwoAdvSectionComponent', 'selector': 'app-two-adv-section'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BookDetailComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BookDetailComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -5,7 +5,13 @@ import { BookCarouselComponent } from '../shared/book-carousel/book-carousel.com
 import { OneAdvSectionComponent } from '../shared/one-adv-section/one-adv-section.component';
 import { TwoAdvSectionComponent } from '../shared/two-adv-section/two-adv-section.component';
 
-
+/**
+ * Clase que dibuja el resto de los componentes
+ *
+ * @see {@link https://angular.io/api/common/http/HttpInterceptor. }
+ *
+ * @author Omar Rodriguez <omar.jesus.rodriguez@gmail.com>
+ */
 @Component({
   selector: 'app-landing-page',
   imports: [HeaderAppComponent,

@@ -1,14 +1,12 @@
-import {CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
-import { SwiperOptions } from 'swiper/types';
 import { register } from 'swiper/element/bundle';
-import { Navigation, Pagination } from 'swiper/modules';
 import Swiper from 'swiper';
+import { Router } from '@angular/router';
 
 import { BookFinderService } from '../../core/services/book-finder.services';
 import { BookFinder, Result } from '../../core/models/bookfinder';
-
-
+import  jsonUrl from '../../../assets/JKRowling.json';
 //https://swiperjs.com/angular
 //https://swiper5.flandre.tw/demos/  -->Multiple Slides Per View
 
@@ -16,7 +14,7 @@ register();
 @Component({
   selector: 'app-book-carousel',
   standalone: true,
-  imports: [ NgFor, NgIf],
+  imports: [NgFor, NgIf],
 
   templateUrl: './book-carousel.component.html',
   styleUrl: './book-carousel.component.css',
@@ -24,82 +22,98 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
-export class BookCarouselComponent  implements OnInit, AfterViewInit  {
+export class BookCarouselComponent implements OnInit, AfterViewInit {
 
+  bookFinder: BookFinder | undefined ;
   listBooks: Result[] = [];
   likedBooks: { [isbn: string]: boolean } = {};
 
+
   constructor(
-    private bookFinderService: BookFinderService )
-  { }
+    private bookFinderService: BookFinderService,
+    private router: Router
+  ) { }
 
   toogleLike(isbn: string): void {
-    this.likedBooks[isbn] = !this.likedBooks[isbn];
-    localStorage.setItem('likedBooks', JSON.stringify(this.likedBooks));
+     this.likedBooks[isbn] = !this.likedBooks[isbn];
+     localStorage.setItem('likedBooks', JSON.stringify(this.likedBooks));
   }
 
-   isLiked(isbn: string): boolean {
+  isLiked(isbn: string): boolean {
     return !!this.likedBooks[isbn];
+
   }
-
-
-
 
   ngOnInit(): void {
-    //this.getBooksByType('fiction');
-    this.getBooksByTypeDefault01();
+     try {
+       this.getBooksByTypeDefault01();
+     } catch (err) {
+      console.error('Unexpected error:', err);
+     }
 
-    const savedLikes = localStorage.getItem('likedBooks');
-    if (savedLikes) {
-      this.likedBooks = JSON.parse(savedLikes);
-    }
+  }
+
+  goToDetail(isbn: string){
+    this.router.navigate(['/app-book-detail', isbn]);
 
   }
 
   getBooksByType(bookType: string): void {
+    try {
     this.bookFinderService.getBooksByType(bookType).subscribe({
       next: (data: BookFinder) => {
         this.listBooks = data.results
 
       },
     });
+  } catch (err) {
+    console.error('Unexpected error:', err);
+  }
   }
 
-  //to simulate the carousel infinite scroll both sides
-  getBooksByTypeDefault01(): void {
-    this.bookFinderService.getDefaultCarouselBooks().subscribe({
-      next: (data: BookFinder) => {
-        this.listBooks = data.results;
-      //  this.listBooks = [...this.listBooks, ...this.listBooks,...this.listBooks];
-        console.log(this.listBooks[0].title, ' - ', this.listBooks[0].shortTitle );
-      },
-    });
+
+   getBooksByTypeDefault01(): void {
+    try {
+         this.listBooks = jsonUrl.results.map((book: any) => ({
+           ...book,
+           shortTitle: book.shortTitle || ''
+         }));
+    } catch (err) {
+      console.error('Unexpected error: ', err);
+    }
   }
+
+
 
   ngAfterViewInit(): void {
-    new Swiper('.swiper', {
-      slidesPerView: 6,
-      spaceBetween: 10, //the result of  listbooks.length
-      loop: false,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        '480': {
-          slidesPerView: 2,
-          spaceBetween: 5,
+      try {
+      new Swiper('.swiper', {
+        slidesPerView: 6,
+        spaceBetween: 10, //the result of  listbooks.length
+        loop: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-        '780': {
-          slidesPerView: 4,
-          spaceBetween: 20,
+        breakpoints: {
+          '480': {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          '780': {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          '1200': {
+            slidesPerView: 6,
+            spaceBetween: 15,
+          },
         },
-        '1200': {
-          slidesPerView: 6,
-          spaceBetween: 15,
-        },
-      },
-    });
+      });
+    } catch (error) {
+      console.error('Error fetching books by type:', error);
+    }
+
   }
 
- }
+}

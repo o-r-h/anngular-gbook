@@ -20,7 +20,7 @@
           />
           <div class="card-body" style="text-align: center;">
             <p class="card-title">{{ book.title }}</p>
-            <button class="btn-quick-view">Quick View</button>
+            <button class="btn-quick-view" (click)="goToDetail(book.canonical_isbn)"  >Quick View</button>
             <span
             id="{{book.canonical_isbn}}"
             class="heart-icon"

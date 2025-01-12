@@ -7,5 +7,5 @@ export const routes: Routes = [
     path: '', redirectTo: '/app-landing-page', pathMatch: 'full'
   },
   {path: 'app-landing-page', component: LandingPageComponent},
-  {path: 'app-book-detail', component: BookDetailComponent}
+  {path: 'app-book-detail/:isbn', component: BookDetailComponent}
 ];
