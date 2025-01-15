@@ -5,6 +5,7 @@ import Swiper from 'swiper';
 import { Router } from '@angular/router';
 
 import { BookFinderService } from '../../core/services/book-finder.services';
+import { LocalStorageService } from '../../core/services/local-storage.services';
 import { BookFinder, Result } from '../../core/models/bookfinder';
 import  jsonUrl from '../../../assets/JKRowling.json';
 //https://swiperjs.com/angular
@@ -31,34 +32,39 @@ export class BookCarouselComponent implements OnInit, AfterViewInit {
 
   constructor(
     private bookFinderService: BookFinderService,
+    private localStorageService: LocalStorageService,
     private router: Router
   ) { }
 
+
+
   toogleLike(isbn: string): void {
-     this.likedBooks[isbn] = !this.likedBooks[isbn];
-     localStorage.setItem('likedBooks', JSON.stringify(this.likedBooks));
+     this.localStorageService.toogleLike(isbn);
   }
 
-  isLiked(isbn: string): boolean {
-    return !!this.likedBooks[isbn];
 
+  isLiked(isbn: string): boolean  {
+    return this.localStorageService.isLiked(isbn);
   }
 
   ngOnInit(): void {
      try {
        this.getBooksByTypeDefault01();
+
      } catch (err) {
       console.error('Unexpected error:', err);
      }
 
   }
 
-  goToDetail(isbn: string){
+
+
+   goToDetail(isbn: string){
     this.router.navigate(['/app-book-detail', isbn]);
 
   }
 
-  getBooksByType(bookType: string): void {
+   getBooksByType(bookType: string): void {
     try {
     this.bookFinderService.getBooksByType(bookType).subscribe({
       next: (data: BookFinder) => {

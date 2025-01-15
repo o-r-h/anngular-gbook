@@ -3,10 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import  jsonUrl from '../../assets/JKRowling.json';
 import { BookFinder, Result } from '../core/models/bookfinder';
+import { LocalStorageService } from '../core/services/local-storage.services';
+import { BookCarouselComponent } from '../shared/book-carousel/book-carousel.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-book-detail',
-  imports: [CarouselModule],
+  imports: [CarouselModule, NgIf, BookCarouselComponent],
   templateUrl: './book-detail.component.html',
   styleUrl: './book-detail.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -15,15 +18,25 @@ export class BookDetailComponent implements OnInit {
   isbn: string ='';
   listBooks: Result[] = [];
   book:Result|undefined;
+  bookSts: boolean = false;
 
 
-  constructor(private rouute:ActivatedRoute) { }
+  constructor(private route:ActivatedRoute, private localStorageService: LocalStorageService) { }
 
   ngOnInit() {
-    this.rouute.params.subscribe(params => {
+    this.route.params.subscribe(params => {
       this.isbn = params['isbn'];
       this.getBooksByisbn(this.isbn);
     });
+  }
+
+
+  isLiked(isbn: string| undefined): boolean  {
+    console.log("detail page",isbn);
+    if (isbn === undefined) {
+      return false;
+    }
+    return this.localStorageService.isLiked(isbn);
   }
 
 
@@ -40,7 +53,7 @@ export class BookDetailComponent implements OnInit {
       if (book) {
         //fill the book
         this.book = book;
-        console.log(this.book);
+        this.bookSts = this.isLiked(this.book.canonical_isbn);
       }
 
   } catch (err) {
